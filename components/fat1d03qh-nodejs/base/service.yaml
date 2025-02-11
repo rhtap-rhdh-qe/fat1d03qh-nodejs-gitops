@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: fat1d03qh-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fat1d03qh-nodejs 
+  name: fat1d03qh-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: fat1d03qh-nodejs 
